@@ -5,6 +5,7 @@ import { IoMenu } from "react-icons/io5";
 const Container = styled.div`
   position: fixed;
   width: 100vw;
+  background-color: var(--darkBlue);
   display: flex;
   justify-content: space-between;
   align-items: center;
