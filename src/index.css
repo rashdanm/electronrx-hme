@@ -1,0 +1,13 @@
+:root {
+  --darkBlue: rgb(3, 14, 35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--darkBlue);
+}
