@@ -18,7 +18,7 @@ const Container = styled.div`
   }
 
   img {
-    width: 500px;
+    width: 300px;
     height: ;
   }
 `;

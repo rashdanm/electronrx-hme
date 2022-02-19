@@ -13,11 +13,7 @@ const Container = styled.div`
 `;
 
 const Button = ({ button }) => {
-  return (
-    <Container>
-      <a>{button}</a>
-    </Container>
-  );
+  return <Container>{button}</Container>;
 };
 
 export default Button;

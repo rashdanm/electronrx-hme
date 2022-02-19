@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
+import Form from "./Form";
 
 const Container = styled.div`
   width: 100vw;
@@ -39,7 +40,7 @@ const Contact = () => {
         Sign up to our newsletter to stay up to date with all of the latest
         information about electronRx progress and awards
       </p>
-      <Button button="Join" />
+      <Form />
     </Container>
   );
 };
