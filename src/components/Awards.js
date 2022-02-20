@@ -42,8 +42,8 @@ const Awards = () => {
         <h1>Awards</h1>
       </>
       <AwardsWrapper>
-        {awards.map((award) => (
-          <img src={"/images/" + award + ".png"} alt="award" />
+        {awards.map((award, index) => (
+          <img key={index} src={"/images/" + award + ".png"} alt="award" />
         ))}
       </AwardsWrapper>
     </Container>
