@@ -23,6 +23,10 @@ const Social = styled.div`
 const Icon = styled.div`
   font-size: 40px;
   margin: 8px;
+
+  &:hover {
+    color: #b1f4cf;
+  }
 `;
 const Address = styled.div`
   font-size: 14px;
@@ -42,7 +46,7 @@ const Footer = () => {
           </Icon>
         </a>
         <a
-          href="https://www.linkedin.com/company/electronrx/"
+          href="https://twitter.com/electron_rx"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -51,7 +55,7 @@ const Footer = () => {
           </Icon>
         </a>
       </Social>
-      <img src="/images/logosmall.png" />
+      <img src="/images/logosmall.png" alt="logo" />
       <Address>
         <p>electronRx Ltd.</p>
         <p>28 Chesterton Road</p>

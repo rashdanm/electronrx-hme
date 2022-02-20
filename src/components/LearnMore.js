@@ -21,13 +21,20 @@ const Container = styled.div`
     width: 300px;
     height: ;
   }
+
+  @media (min-width: 768px) {
+    p {
+      width: 40%;
+      font-size: 2rem;
+    }
+  }
 `;
 
 const LearnMore = () => {
   return (
     <Container>
       <p>Our products are powered by machine learning in the eRx Cloud</p>
-      <img src="/images/learn.png" />
+      <img src="/images/learn.png" alt="learn" />
       <p>
         Custom-built for our uniquely patient centred approach to digital
         healthcare

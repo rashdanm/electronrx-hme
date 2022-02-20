@@ -10,6 +10,10 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  &:hover {
+    background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  }
 `;
 
 const Button = ({ button }) => {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
 
@@ -14,7 +14,7 @@ const Container = styled.form`
 
   input {
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 10px;
     width: 350px;
     border-radius: 100px;
@@ -22,12 +22,15 @@ const Container = styled.form`
     font-size: 1.2rem;
     color: var(--darkBlue);
   }
+
+  @media (min-width: 768px) {
+    input {
+      width: 450px;
+    }
+  }
 `;
 
 const Form = () => {
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [showFailureMessage, setShowFailureMessage] = useState(false);
-
   return (
     <Container>
       <label>Email</label>

@@ -36,7 +36,15 @@ const CloseIcon = styled(IoClose)`
 `;
 
 const MenuNav = ({ showMenu, closeButton }) => {
-  const menuItems = ["Home", "Knowledge", "Pipeline", "About us", "Contact us"];
+  const menuItems = [
+    "Home",
+    "Knowledge",
+    "Pipeline",
+    "About us",
+    "Contact us",
+    "Careers",
+    "Privacy Policy",
+  ];
   return (
     <Container showMenu={showMenu}>
       <CloseIcon onClick={closeButton}>

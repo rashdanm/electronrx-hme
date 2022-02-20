@@ -3,7 +3,6 @@ import styled from "styled-components/";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -12,6 +11,26 @@ const Container = styled.div`
 
   img {
     width: 65%;
+    margin: 10px;
+  }
+
+  @media (min-width: 1000px) {
+    img {
+      width: 300px;
+    }
+  }
+`;
+
+const AwardsWrapper = styled.div`
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    width: 90vw;
+    flex-direction: row;
   }
 `;
 
@@ -19,10 +38,14 @@ const Awards = () => {
   const awards = ["awardOne", "awardTwo", "awardThree", "awardFour"];
   return (
     <Container>
-      <h1>Awards</h1>
-      {awards.map((award) => (
-        <img src={"/images/" + award + ".png"} />
-      ))}
+      <>
+        <h1>Awards</h1>
+      </>
+      <AwardsWrapper>
+        {awards.map((award) => (
+          <img src={"/images/" + award + ".png"} alt="award" />
+        ))}
+      </AwardsWrapper>
     </Container>
   );
 };

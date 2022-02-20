@@ -21,7 +21,7 @@ body {
   color: var(--white);
   font-family: "Monserrat-Light", Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 li {
