@@ -35,7 +35,7 @@ const AwardsWrapper = styled.div`
 `;
 
 const Awards = () => {
-  const awards = ["awardOne", "awardTwo", "awardThree", "awardFour"];
+  const awards = ["awardone", "awardtwo", "awardthree", "awardfour"];
   return (
     <Container>
       <>
